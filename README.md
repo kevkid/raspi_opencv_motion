@@ -22,3 +22,4 @@ I don't know why it didn't work on its own, but I had to manually copy it
 `raspivid -n -t 0 -w 1280 -h 720 -ex antishake -awb fluorescent -fps 25 -b 2000000 -o - | gst-launch-1.0 -v fdsrc ! h264parse ! rtph264pay config-interval=1 pt=96 ! gdppay ! tcpserversink host=RASPI_IP_ADDR port=5000`
 
 You should now be able to run the python code in this repo, just change the ip address to your own.
+Credit to: Adrian Rosebrock for partially taking from here: https://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/
