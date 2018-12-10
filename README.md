@@ -5,9 +5,11 @@
 ### Clone opencv
 `git clone https://github.com/opencv/opencv.git`
 ### make build directory
-`cd ~/opencv
-mkdir build
-cd build`
+`cd ~/opencv`
+
+`mkdir build`
+
+`cd build`
 ### configure opencv
 `cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_NEW_PYTHON_SUPPORT=ON -D BUILD_opencv_python3=ON -D WITH_GSTREAMER=ON -D WITH_GTK=ON ..`
 ### make opencv
